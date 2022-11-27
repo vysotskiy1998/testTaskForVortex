@@ -9,7 +9,7 @@ func changeLetters(_ words: String) -> String {
     for (index, char) in words.enumerated() {
         
         let startIndex = words.index(words.startIndex, offsetBy: index)
-        let endIndex = words.index(words.startIndex, offsetBy: index + 1)
+        let endIndex = words.index(words.startIndex, offsetBy: index + 1) 
         
         if char == "a" || char == "A"{
             words = words.replacingCharacters(in: startIndex..<endIndex, with: "@")
